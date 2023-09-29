@@ -1,4 +1,5 @@
 import axiosInstance from "../request/index";
+import { UpdatePassword, UserInfo } from "./types/user";
 
 export async function login(username: string, password: string) {
     return await axiosInstance.post('/user/admin/login', {
@@ -28,4 +29,30 @@ export async function userSearch(username: string, nickName: string, email: stri
             pageSize
         }
     });
+}
+
+export async function getUserInfo() {
+    return await axiosInstance.get('/user/info');
+}
+
+export async function updateInfo(data: UserInfo) {
+    return await axiosInstance.post('/user/admin/update', data);
+}
+
+export async function updateUserInfoCaptcha() {
+    return await axiosInstance.get('/user/update/captcha');
+}
+
+
+
+export async function updatePasswordCaptcha(email: string) {
+    return await axiosInstance.get('/user/update_password/captcha', {
+        params: {
+            address: email
+        }
+    });
+}
+
+export async function updatePassword(data: UpdatePassword) {
+    return await axiosInstance.post('/user/admin/update_password', data);
 }
