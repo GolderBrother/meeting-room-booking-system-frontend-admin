@@ -7,13 +7,13 @@ import { deleteMeetingRoom, getMeetingRoomList } from "../../api/meeting-room";
 import { CreateMeetingRoomModal } from "./CreateMeetingRoomModal";
 import { UpdateMeetingRoomModal } from "./UpdateMeetingRoom";
 
-interface SearchMeetingRoom {
+export interface SearchMeetingRoom {
   name: string;
   capacity: number;
   equipment: string;
 }
 
-interface MeetingRoomSearchResult {
+export interface MeetingRoomSearchResult {
   id: number,
   name: string;
   capacity: number;

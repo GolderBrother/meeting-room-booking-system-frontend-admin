@@ -15,12 +15,6 @@ const enum MenuItemKeyToPathMap {
   USER_MANAGE = '/user_manage',
   STATISTICS = '/statistics',
 };
-// const MenuItemKeyToPathMap = {
-//   [MenuItemKeyMap.BOOKING_MANAGE]: '/meeting_room_manage',
-//   [MenuItemKeyMap.MEETING_ROOM_MANAGE]: '/booking_manage',
-//   [MenuItemKeyMap.USER_MANAGE]: '/user_manage',
-//   [MenuItemKeyMap.STATISTICS]: '/statistics',
-// };
 const MenuItemPathToKeyMap = {
   [MenuItemKeyToPathMap.MEETING_ROOM_MANAGE]: MenuItemKeyMap.MEETING_ROOM_MANAGE,
   [MenuItemKeyToPathMap.BOOKING_MANAGE]: MenuItemKeyMap.BOOKING_MANAGE,

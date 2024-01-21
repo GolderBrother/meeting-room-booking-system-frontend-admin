@@ -5,13 +5,13 @@ import { ColumnsType } from "antd/es/table";
 import "./userManage.css";
 import { userSearch } from "../../api/user";
 
-interface SearchUser {
+export interface SearchUser {
 	username: string;
 	nickName: string;
 	email: string;
 }
 
-interface UserSearchResult {
+export interface UserSearchResult {
 	username: string;
 	nickName: string;
 	email: string;
