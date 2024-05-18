@@ -3,7 +3,9 @@ import { message } from "antd";
 import { refreshToken } from "../api/user";
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3005/',
+    // baseURL: 'http://localhost:3005/',
+    // baseURL: 'http://localhost/api',
+    baseURL: 'http://47.115.36.179/api',
     timeout: 3000
 });
 axiosInstance.interceptors.request.use(function (config) {
